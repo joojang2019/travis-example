@@ -1,0 +1,56 @@
+$back-button: #0277bd;
+$navbar-color: rgb(223, 236, 245);
+
+@mixin button-styling{
+  background-color: white !important;
+  border-radius: 25px !important;
+  border-color: #0277bd !important;
+  border-style: solid !important;
+  border-width: medium !important;
+  color: #0277bd !important;
+
+}
+
+.page-container {
+  margin-top: 2em;
+
+  .product-card {
+    margin-top: 5em;
+    justify-content: center;
+    width: auto !important;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    .product-media {
+      padding-top: 25%;
+      padding-bottom: 25%;
+      justify-content: center;
+      width: 20em;
+      height: 10em;
+      background-color: #eeeeee;
+    }
+
+    .card-content {
+      //box-shadow: 0px -2px 16px -8px rgba(0, 0, 0, 0.75);
+      // background-color: $navbar-color;
+      box-shadow: 0px -2px 10px -8px rgba(0,0,0,0.75);
+      width: auto !important;
+      height: 100% !important;
+    
+      .contact-button {
+        @include button-styling;
+        margin: 1em 0 0 5em;
+      }
+
+      .email {
+        max-width: 90%;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .back-button {
+    background-color: $back-button;
+    color: white;
+  }
+}

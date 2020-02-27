@@ -1,0 +1,76 @@
+$navbar-color: #e0e0e0;
+$login-button-color: #0277bd;
+
+@mixin button-styling{
+  background-color: white !important;
+  border-radius: 25px !important;
+  border-color: #0277bd !important;
+  border-style: solid !important;
+  border-width: medium !important;
+  color: #0277bd !important;
+
+}
+
+.nav-bar {
+  box-shadow: 2;
+  max-height: 5em !important;
+  background-color: $navbar-color !important;
+
+  img {
+    max-width: 75%;
+    max-height: 75%;
+    padding-left: 1em;
+    margin: 0 0 0 0;
+  }
+}
+
+.button-container {
+  margin: 4em 0 0 0;
+  padding: 0 1.5em 0 0;
+}
+
+.login {
+  position: absolute;
+  text-decoration: none;
+  @include button-styling;
+  margin: 4.5em 1em 0 0em !important;
+}
+
+.logout {
+  @include button-styling;
+  position: absolute;
+  text-decoration: none;
+  margin: 0 0 0 1em !important;
+
+}
+
+.account-button {
+  position: absolute;
+  @include button-styling;
+
+
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) {
+  .nav-bar {
+    max-height: 6em !important;
+
+    img {
+      max-width: 50%;
+      max-height: 50%;
+      padding-left: 0;
+      margin: 0 0 0 0;
+    }
+  }
+  .login {
+    margin: 2.5em 0 0 0 !important;
+  }
+
+  .button-container {
+    position: static;
+    margin: -4.5em 0 0 8em;
+    padding: 0 0 0 0;
+  }
+}
