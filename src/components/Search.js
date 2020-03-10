@@ -50,7 +50,7 @@ const Search = ({ searchQuery }) => {
               value={currTerm}
               onChange={changeCurrTerm}
               onKeyDown={handleEnter}
-              inputProps={{ "data-testid": "search-input" }}
+              inputProps={{ "data-testid": "search" }}
             />
             <Link to={searchTerm}>
               <IconButton

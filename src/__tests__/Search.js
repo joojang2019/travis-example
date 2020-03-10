@@ -12,7 +12,7 @@ describe("Test to see if correct input went into search bar", () => {
     );
     // When testing external React components, need to pass down
     // props to the actual HTML element (via inputProps in Material)
-    const input = getByTestId("search-input");
+    const input = getByTestId("search");
     expect(input.value).toBe("bike");
   });
 });
