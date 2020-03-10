@@ -11,9 +11,7 @@ const ItemList = ({ items }) => {
       {items.map(([id, item]) => (
         <Grid item key={id}>
           {" "}
-          <Item data-testid={`Item${item.index}`} item={item}>
-            G
-          </Item>
+          <Item item={item}>G</Item>
         </Grid>
       ))}
     </Grid>

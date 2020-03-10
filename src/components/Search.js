@@ -50,9 +50,13 @@ const Search = ({ searchQuery }) => {
               value={currTerm}
               onChange={changeCurrTerm}
               onKeyDown={handleEnter}
+              inputProps={{ "data-testid": "search-input" }}
             />
             <Link to={searchTerm}>
-              <IconButton className="iconButton" aria-label="search"></IconButton>
+              <IconButton
+                className="iconButton"
+                aria-label="search"
+              ></IconButton>
               <SearchIcon />
             </Link>
           </Paper>
@@ -69,7 +73,8 @@ const Search = ({ searchQuery }) => {
             >
               <img src={bike_icon} alt=""></img>
             </Button>
-            <Button size="small"
+            <Button
+              size="small"
               onClick={() => {
                 changeCurrTermPreset("clothing");
               }}
