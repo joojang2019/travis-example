@@ -8,8 +8,15 @@ import SearchIcon from "@material-ui/icons/Search";
 const ItemList = ({ items }) => {
   return items.length ? (
     <Grid container spacing={3} justify="center">
-      {items.map(([id, item]) =>
-        <Grid item key={id}> <Item item={item} /></Grid>)}</Grid>
+      {items.map(([id, item]) => (
+        <Grid item key={id}>
+          {" "}
+          <Item data-testid={`Item${item.index}`} item={item}>
+            G
+          </Item>
+        </Grid>
+      ))}
+    </Grid>
   ) : (
     <div
       style={{
@@ -23,9 +30,8 @@ const ItemList = ({ items }) => {
         <SearchIcon style={{ fontSize: "125", color: "coral" }}></SearchIcon>
       </div>
       <div>
-          We couldn't find the item you're looking for. Please try searching a
-          different item!
-
+        We couldn't find the item you're looking for. Please try searching a
+        different item!
       </div>
     </div>
   );
