@@ -1,5 +1,5 @@
 {
-  "name": "item-share",
+  "name": "travis-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
     "@material-ui/lab": "^4.0.0-alpha.39",
     "@material-ui/pickers": "^3.2.10",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.1.2",
     "date-fns": "^2.9.0",
     "firebase": "^7.6.2",
@@ -24,7 +24,7 @@
     "react-dom": "^16.12.0",
     "react-firebase-file-uploader": "^2.4.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.0",
     "shortid": "^2.2.15"
   },
   "scripts": {
@@ -52,16 +52,9 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-react": "^7.17.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aakanksha1/TeamGreen-itemShare.git"
-  },
   "keywords": [
     "itemshare"
   ],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aakanksha1/TeamGreen-itemShare/issues"
-  }
+  "license": "ISC"
 }

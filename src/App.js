@@ -22,22 +22,22 @@ import "firebase/storage";
 
 // Firebase Config
 const firebaseConfig = {
-  apiKey: "AIzaSyCBTX-6ANlkTp1VBa3DtteC3IidMEVuv1g",
-  authDomain: "itemshare-94837.firebaseapp.com",
-  databaseURL: "https://itemshare-94837.firebaseio.com",
-  projectId: "itemshare-94837",
-  storageBucket: "itemshare-94837.appspot.com",
-  messagingSenderId: "536577401914",
-  appId: "1:536577401914:web:ab909fc4da2fcf0302c103"
+  apiKey: "AIzaSyDZXnKGV6-4_ei1EqAtF6_HCrgHVnc84jY",
+  authDomain: "travis-example-59874.firebaseapp.com",
+  databaseURL: "https://travis-example-59874.firebaseio.com",
+  projectId: "travis-example-59874",
+  storageBucket: "travis-example-59874.appspot.com",
+  messagingSenderId: "741412926940",
+  appId: "1:741412926940:web:6884606ceb0432adbf4b19"
 };
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database().ref();
 const storageRef = firebase.storage().ref();
-
 const App = () => {
   const [items, setItems] = useState([]);
   const [allItems, setAllItems] = useState([]);
+  console.log(items);
 
   useEffect(() => {
     const handleData = snap => {
