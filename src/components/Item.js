@@ -28,6 +28,7 @@ export default function Item({ item }) {
               variant="h5"
               component="h1"
               className="name-typography"
+              data-cy="item"
             >
               {item.name}
             </Typography>
