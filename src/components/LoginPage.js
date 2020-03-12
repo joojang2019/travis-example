@@ -87,7 +87,7 @@ const LoginPage = () => {
             onSubmit={formType === "Login" ? login : signUp}
             style={{ textAlign: "center" }}
           >
-            <div>
+            <div data-cy="loginbutton">
               Login
               <Switch
                 onChange={handleFormChange}

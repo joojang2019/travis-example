@@ -121,7 +121,9 @@ const NewItemModal = ({ state }) => {
               margin="normal"
               variant="outlined"
             >
-              <MenuItem value={"clothing"}>Clothing</MenuItem>
+              <MenuItem value={"clothing"} data-cy="category">
+                Clothing
+              </MenuItem>
               <MenuItem value={"camera"}>Camera</MenuItem>
               <MenuItem value={"school_supplies"}>School Supplies</MenuItem>
               <MenuItem value={"bike"}>Bike</MenuItem>
@@ -166,7 +168,7 @@ const NewItemModal = ({ state }) => {
             {user && Object.entries(user).length === 0 ? (
               <div>
                 <p>You should login to add a new item.</p>
-                <Link to="/login" style={{textDecoration: "none"}}>
+                <Link to="/login" style={{ textDecoration: "none" }}>
                   <Button
                     className="modal-login-button"
                     variant="contained"

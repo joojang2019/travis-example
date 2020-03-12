@@ -42,22 +42,20 @@ const Banner = () => {
                   variant="contained"
                   color="primary"
                   className="login"
+                  data-cy="login"
                 >
                   Login
                 </Button>
               </Link>
             ) : (
               <div className="button-container">
-                <Link
-                  to="/account"
-                  style={{ textDecoration: "none" }}
-                >
+                <Link to="/account" style={{ textDecoration: "none" }}>
                   <Button
                     variant="contained"
                     color="primary"
                     className="account-button"
                   >
-                        My Account
+                    My Account
                   </Button>
                 </Link>
                 <Button
@@ -66,14 +64,14 @@ const Banner = () => {
                   className="logout"
                   onClick={handleLogOut}
                 >
-                      Logout
+                  Logout
                 </Button>
               </div>
             )}
           </div>
         </Grid>
       </Toolbar>
-    </AppBar >
+    </AppBar>
   );
 };
 

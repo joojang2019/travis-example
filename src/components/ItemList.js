@@ -11,7 +11,7 @@ const ItemList = ({ items }) => {
       {items.map(([id, item]) => (
         <Grid item key={id}>
           {" "}
-          <Item item={item}>G</Item>
+          <Item item={item}></Item>
         </Grid>
       ))}
     </Grid>
