@@ -11,8 +11,9 @@ addons:
 cache:
   directories:
     - node_modules
-    - ~/cypress
+    # folder with Cypress binary
     - ~/.cache
+    - /home/travis/.cache/Cypress
 
 script:
   - npm test
